@@ -1,16 +1,4 @@
 "use strict";
-
-function calculateVolumeAndArea(a) {
-  if (typeof a != "number" || a <= 0 || Number.isInteger(a) === false) {
-    return "При вычислении произошла ошибка";
-  } else {
-    return (
-      "Объем куба: " +
-      a * a * a +
-      ", " +
-      "площадь всей поверхности: " +
-      a * a * 6
-    );
-  }
-}
-calculateVolumeAndArea(15.5);
+const arr = [2, 1, 9, 15, 8];
+arr.sort((a, b) => a - b);
+console.log(arr);
