@@ -1,4 +1,12 @@
 "use strict";
-const arr = [2, 1, 9, 15, 8];
-arr.sort((a, b) => a - b);
-console.log(arr);
+
+const soldier = {
+  health: 400,
+  armor: 100,
+};
+
+const john = {
+  health: 100,
+};
+Object.setPrototypeOf(john, soldier);
+const John = Object.create(soldier);
